@@ -1,0 +1,17 @@
+{
+  "name": "soul-chatter",
+  "version": "1.0.0",
+  "description": "A simple chat tool between devices on web view.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hungrated",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "open": "^6.3.0",
+    "socket.io": "^2.2.0"
+  }
+}
