@@ -1,7 +1,7 @@
 {
   "name": "soul-chatter",
   "version": "1.0.0",
-  "description": "A simple chat tool between devices on web view.",
+  "description": "A simple chat tool between devices based on web view.",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",

@@ -37,7 +37,7 @@
         padding: 0;
       }
       #messages li {
-        padding: 5px 10px;
+        padding: 15px 35px;
       }
       #messages li:nth-child(odd) {
         background: #eee;
@@ -54,11 +54,10 @@
     <script>
       const socket = io();
       function addLine(msg) {
-        $("#messages").append($("<li>").text(msg));
+        $("#messages").append($("<li>").text(decodeURI(msg)));
       }
       $("form").submit(function() {
-        var msg = $('#msg').val();
-        console.log(msg);
+        var msg = encodeURI($('#msg').val());
         socket.emit("message", msg);
         $('#msg').val('');
         return false;

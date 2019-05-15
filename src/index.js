@@ -13,7 +13,7 @@ io.on("connection", function(socket) {
   console.log("A user connected.");
 
   socket.on("message", function (msg) {
-    io.emit("message", msg) //将新消息广播出去
+    io.emit("message", msg)
   })
 });
 
